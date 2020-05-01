@@ -1,6 +1,6 @@
 class PlayerGame < ApplicationRecord
 
   # associations
-  playergames belongs_to :game
-  playergames belongs_to :player
+  belongs_to :game
+  belongs_to :player
 end
