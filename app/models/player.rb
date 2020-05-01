@@ -3,8 +3,8 @@ class Player < ApplicationRecord
   validates :email, presence: true, uniqueness: true
 
   # associations
-  has_many :created_games, class_name: "Game"
-  has_many :fields, through: :created_games
+  has_many :games_created, class_name: "Game"
+  has_many :fields, through: :games_created
   has_many :games_attending, class_name: "PlayerGame"
   has_many :fields, through: :games_attending
 end
