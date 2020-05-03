@@ -17,6 +17,7 @@ Player.create!(name: "Marta Vieira da Silva", email: "marta@example.com", passwo
 Player.create!(name: "Joseline Montoya", email: "joseline@example.com", password: "password", address: "3 Sacramento Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(2000, 07, 03), level: "recreational")
 Player.create!(name: "Adrianna Franch", email: "adriana@example.com", password: "password", address: "4 Devon Ave, Chicago, IL 60645", position: "Goalkeeper", dob: Date.new(1990, 11, 12), level: "recreational")
 Player.create!(name: "Julie Ertz", email: "julie@example.com", password: "password", address: "5 North California Ave, Chicago, IL 60645", position: "Defender", dob: Date.new(1992, 04, 06), level: "recreational")
+Player.create!(name: "Ernesto Melchor", email: "ernesto@example.com", password: "password", address: "88 North California Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1988, 8, 8), level: "recreational", admin: true)
 
 # 3 Fields
 Field.create!(name: "Chicago Celtic Training Field", address: "5099 N Albany Ave, Chicago, IL 60625", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://lh5.googleusercontent.com/p/AF1QipMEJDDRfuBmd2_FvZwoz3yY24SbRPj3bNbRv_eM=w426-h240-k-no")
@@ -36,10 +37,8 @@ PlayerGame.create!(game_id: 1, player_id: 4, attending: true)
 PlayerGame.create!(game_id: 1, player_id: 10, attending: true)
 PlayerGame.create!(game_id: 1, player_id: 5, attending: true)
 PlayerGame.create!(game_id: 1, player_id: 9, attending: true)
-PlayerGame.create!(game_id: 1, player_id: 3, attending: true)
 PlayerGame.create!(game_id: 1, player_id: 3, attending: false)
 PlayerGame.create!(game_id: 2, player_id: 8, attending: true)
-PlayerGame.create!(game_id: 2, player_id: 7, attending: true)
 PlayerGame.create!(game_id: 2, player_id: 6, attending: true)
 PlayerGame.create!(game_id: 2, player_id: 9, attending: true)
 PlayerGame.create!(game_id: 2, player_id: 10, attending: true)

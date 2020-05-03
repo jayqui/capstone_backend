@@ -1,3 +1,9 @@
-{
-  activity: @player_games,
-}
+@player_games.map do |player_game|
+  {
+    id: player_game.id,
+    game_id: player_game.game_id,
+    player_name: player_game.player.name,
+    attending: player_game.attending,
+    updated_at: player_game.updated_at,
+  }
+end

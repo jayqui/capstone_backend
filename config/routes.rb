@@ -21,5 +21,6 @@ Rails.application.routes.draw do
 
     #PlayerGames actions
     get "/player_games/" => "player_games#index"
+    get "/player_games/" => "player_games#show"
   end
 end

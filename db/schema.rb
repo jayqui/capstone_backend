@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_04_24_014033) do
     t.string "position"
     t.date "dob"
     t.string "level"
+    t.boolean "admin", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

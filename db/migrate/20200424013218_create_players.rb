@@ -8,6 +8,7 @@ class CreatePlayers < ActiveRecord::Migration[6.0]
       t.string :position
       t.date :dob
       t.string :level
+      t.boolean :admin, default: false
 
       t.timestamps
     end
