@@ -2,8 +2,8 @@
   {
     id: game.id,
     game_creator: game.player.name,
-    field_id: game.field.name,
-    date_time: game.date_time,
+    field_name: game.field.name,
+    date_and_time: game.friendly_date_time!,
     players_attending: game.players_attending.length, # I only want to show players whose attending status is true
   }
 end
