@@ -13,5 +13,6 @@ Rails.application.routes.draw do
 
     #Player actions
     get "/players" => "players#index"
+    get "/players/:id" => "players#show"
   end
 end
