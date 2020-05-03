@@ -4,6 +4,6 @@ class Field < ApplicationRecord
   has_many :games
   has_many :players, through: :games
 
-  def friendly_start_time!
-  end
+  # def friendly_start_time!
+  # end
 end

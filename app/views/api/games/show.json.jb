@@ -1,11 +1,11 @@
 {
   id: @game.id,
-  player_id: @game.player_id,
-  field_id: @game.field_id,
-  date_time: @game.friendly_date_time!,
+  game_creator: @game.player.name,
+  field_name: @game.field.name,
+  scheduled: @game.friendly_date_time!,
   players_attending: @game.players_attending.map do |player|
     {
-      player_attending: player.name, # I only want to show player_id if attending: true
+      name: player.name,
     }
   end,
 }
