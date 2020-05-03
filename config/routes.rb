@@ -19,8 +19,11 @@ Rails.application.routes.draw do
     get "/fields" => "fields#index"
     get "/fields/:id" => "fields#show"
 
-    #PlayerGames actions
+    #PlayerGame actions
     get "/player_games/" => "player_games#index"
     get "/player_games/" => "player_games#show"
+
+    #Session actions
+    post "/sessions" => "sessions#create"
   end
 end
