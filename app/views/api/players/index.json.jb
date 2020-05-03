@@ -5,7 +5,7 @@
     email: player.email,
     address: player.address,
     position: player.position,
-    age: player.friendly_dob!,
+    age: player.age!,
     level: player.level,
     games_created: player.games_created.length,
     games_attending: player.games_attending.length,
