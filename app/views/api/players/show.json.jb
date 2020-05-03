@@ -6,4 +6,12 @@
   position: @player.position,
   dob: @player.dob,
   level: @player.level,
+  games_created: @player.games_created.map do |game_created|
+    {
+      id: game_created.id,
+      field_id: game_created.field_id,
+      date: game_created.date_time,
+    }
+  end,
+  games_attending: @player.games_attending,
 }
