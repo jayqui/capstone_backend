@@ -1,0 +1,6 @@
+{
+  id: @game.id,
+  player_id: @game.player_id,
+  field_id: @game.field_id,
+  date_time: @game.date_time,
+}
