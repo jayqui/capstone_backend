@@ -9,6 +9,6 @@ class Game < ApplicationRecord
   has_many :players_attending, class_name: "PlayerGame"
 
   def friendly_date_time!
-    date_time.strftime("%A, %b %d, %Y at:%l:%M %p")
+    date_time.strftime("%A, %b %d, %Y at %l:%M %p")
   end
 end
