@@ -14,5 +14,9 @@ Rails.application.routes.draw do
     #Player actions
     get "/players" => "players#index"
     get "/players/:id" => "players#show"
+
+    #Field actions
+    get "/fields" => "fields#index"
+    get "/fields/:id" => "fields#show"
   end
 end
