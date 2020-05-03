@@ -1,9 +1,13 @@
-@games.each do |game|
+@games.map do |game|
   {
     id: game.id,
     player_id: game.player_id,
     field_id: game.field_id,
     date_time: game.date_time,
-    attending: game.players_attending, # This line of code doesn't show up on server. Why not?
+    attending: game.players_attending.map do |attendee|
+      {
+        player_attending: attendee.player_id, # I only want to show player_id if attending: true
+      }
+    end,
   }
 end
