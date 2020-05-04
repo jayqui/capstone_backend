@@ -4,4 +4,5 @@
   player_name: @game.player.name,
   field_name: @game.field.name,
   scheduled: @game.friendly_date_time!,
+
 }

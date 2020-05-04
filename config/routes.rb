@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
     #PlayerGame actions
     get "/player_games/" => "player_games#index"
-    get "/player_games/" => "player_games#show"
+    get "/player_games/:id" => "player_games#show"
 
     #Session actions
     post "/sessions" => "sessions#create"

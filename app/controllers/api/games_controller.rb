@@ -13,6 +13,7 @@ class Api::GamesController < ApplicationController
     @game = Game.new(player_id: current_player.id, field_id: params[:field_id], date_time: params[:date_time])
     if @game.save
       @player_game = PlayerGame.new(game_id: @game.id, player_id: current_player.id, attending: true)
+      @player_game.save
       render "create.json.jb"
     else
       render json: { errors: @game.errors.full_message }, status: 422
