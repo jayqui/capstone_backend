@@ -20,8 +20,10 @@ Rails.application.routes.draw do
     get "/fields/:id" => "fields#show"
 
     #PlayerGame actions
-    get "/player_games/" => "player_games#index"
+    get "/player_games" => "player_games#index"
     get "/player_games/:id" => "player_games#show"
+    post "/player_games" => "player_games#create"
+    delete "/player_games/:id" => "player_games#destroy"
 
     #Session actions
     post "/sessions" => "sessions#create"

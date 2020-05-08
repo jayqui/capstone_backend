@@ -21,8 +21,8 @@ class Api::GamesController < ApplicationController
   end
 
   def update
-    @game = Game.find_by(id: params[:id])
-    @game.player_id = params[:player_id] || @game.player_id
+    @game = current_player.games_created.find_by(id: params[:id])
+    @game.player_id = current_player.id
     @game.field_id = params[:field_id] || @game.field_id
     @game.date_time = params[:date_time] || @game.date_time
     if @game.save
@@ -33,11 +33,8 @@ class Api::GamesController < ApplicationController
   end
 
   def destroy
-    @game = Game.find_by(id: params["id"])
-    if @game.destroy
-      render "destroy.json.jb"
-    else
-      render json: { errors: @game.errors.full_messages }, status: 401
-    end
+    game = current_player.games_created.find_by(id: params[:id])
+    game.destroy
+    render "destroy.json.jb"
   end
 end
