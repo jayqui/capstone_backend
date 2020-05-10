@@ -11,9 +11,9 @@ class Api::PlayersController < ApplicationController
 
   def create
     @player = Player.new(
-      name: current_player.id, 
-      email: params[:field_id], 
-      password_digest: params[:date_time],
+      name: params[:name], 
+      email: params[:email], 
+      password_digest: params[:password_digest],
       address: params[:address],
       position: params[:position],
       dob: params[:dob],
