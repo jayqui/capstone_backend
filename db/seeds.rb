@@ -22,7 +22,7 @@ Player.create!(name: "Ernesto Melchor", email: "ernesto@example.com", password: 
 # 3 Fields
 Field.create!(name: "Chicago Celtic Training Field", address: "5099 N Albany Ave, Chicago, IL 60625", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://lh5.googleusercontent.com/p/AF1QipMEJDDRfuBmd2_FvZwoz3yY24SbRPj3bNbRv_eM=w426-h240-k-no")
 Field.create!(name: "Clark Turf Field", address: "3373-3557 N Rockwell St, Chicago, IL 60618", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://geo2.ggpht.com/cbk?panoid=1AgKEngAyXT6UtivxuQZMw&output=thumbnail&cb_client=search.gws-prod/local-details-localweb.gps&thumb=2&w=408&h=240&yaw=48.7684&pitch=0&thumbfov=100")
-Field.create!(name: "Foster Turf Field", address: "Lakefront Trail, Chicago, IL 60640", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/59688134_10157492355230530_8454974547622363136_n.jpg?_nc_cat=109&_nc_sid=05277f&_nc_ohc=T9Jbl1JEShEAX90bJXY&_nc_ht=scontent-ort2-1.xx&oh=a4bc120e36d1ef573f47a91f3c76d1a0&oe=5EAA294F")
+Field.create!(name: "Foster Turf Field", address: "Lakefront Trail, Chicago, IL 60640", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://s3-media0.fl.yelpcdn.com/bphoto/8OmwCU7D-mLb733W3WvwTQ/o.jpg")
 
 # 2 Scheduled Games
 Game.create!(player_id: 1, field_id: 1, date_time: DateTime.new(2020, 8, 1, 11, 00, 00))
