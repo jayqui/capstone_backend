@@ -10,18 +10,11 @@ class Api::PlayersController < ApplicationController
   end
 
   def create
-    @player = Player.new(
-      name: params[:name], 
-      email: params[:email], 
-      password_digest: params[:password_digest],
-      address: params[:address],
-      position: params[:position],
-      dob: params[:dob],
-      level: params[:level],
-    )
+    @player = Player.new(name: params[:name], email: params[:email], password: params[:password], address: params[:address], position: params[:position], dob: params[:dob], level: params[:level])
     if @player.save
       render "create.json.jb"
     else
       render json: { errors: @player.errors.full_message }, status: 422
     end
+  end
 end
