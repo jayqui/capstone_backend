@@ -11,9 +11,7 @@ class Game < ApplicationRecord
   has_many :players, through: :player_games
 
   def players_attending
-    player_games.where(attending: true).map do |player_game|
-      player_game.player
-    end
+    players.where(player_games: { attending: true })
   end
 
   def friendly_date_time!

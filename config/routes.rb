@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     #Player actions
     get "/players" => "players#index"
     get "/players/:id" => "players#show"
+    post "/players" => "player#create"
 
     #Field actions
     get "/fields" => "fields#index"
