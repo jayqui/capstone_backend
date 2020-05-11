@@ -3,6 +3,7 @@
   game_creator: @game.player.name,
   field: @game.field,
   scheduled: @game.friendly_date_time!,
+  attending: @game.players_attending.include?(current_player),
   players_attending: @game.players_attending.map do |player|
     {
       name: player.name,
