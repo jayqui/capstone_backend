@@ -15,7 +15,7 @@ Player.create!(name: "Manuel Neuer", email: "manuel@example.com", password: "pas
 Player.create!(name: "Megan Rapinoe", email: "megan@example.com", password: "password", address: "1 Sacramento Ave, Chicago, IL 60645", position: "Midfield", dob: Date.new(1985, 07, 05), level: "recreational")
 Player.create!(name: "Marta Vieira da Silva", email: "marta@example.com", password: "password", address: "2 Devon Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1986, 02, 19), level: "recreational")
 Player.create!(name: "Joseline Montoya", email: "joseline@example.com", password: "password", address: "3 Sacramento Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(2000, 07, 03), level: "recreational")
-Player.create!(name: "Adrianna Franch", email: "adriana@example.com", password: "password", address: "4 Devon Ave, Chicago, IL 60645", position: "Goalkeeper", dob: Date.new(1990, 11, 12), level: "recreational")
+Player.create!(name: "Adrianna Franch", email: "adrianna@example.com", password: "password", address: "4 Devon Ave, Chicago, IL 60645", position: "Goalkeeper", dob: Date.new(1990, 11, 12), level: "recreational")
 Player.create!(name: "Julie Ertz", email: "julie@example.com", password: "password", address: "5 North California Ave, Chicago, IL 60645", position: "Defender", dob: Date.new(1992, 04, 06), level: "recreational")
 Player.create!(name: "Ernesto Melchor", email: "ernesto@example.com", password: "password", address: "88 North California Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1988, 8, 8), level: "recreational", admin: true)
 

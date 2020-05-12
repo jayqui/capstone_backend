@@ -8,6 +8,7 @@
     attending: game.players_attending.include?(current_player),
     player_games: game.player_games.map do |player_game|
       {
+        player_id: player_game.player_id,
         player_game_id: player_game.id,
       }
     end,
