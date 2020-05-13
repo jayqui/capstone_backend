@@ -1,4 +1,5 @@
 {
   message: "You are attending this game!",
   player_game_id: @player_game.id,
+  player_name: @player_game.player.name,
 }

@@ -11,11 +11,16 @@ class Api::PlayerGamesController < ApplicationController
 
   def create
     @player_game = PlayerGame.find_by(game_id: params[:game_id], player_id: current_player.id)
-    if @player_game
-      render json: { errors: ["You've already signed up for this game."] }
-      return
+    if @player_game && @player_game.attending
+      # do nothing
+    elsif @player_game && !@player_game.attending
+      @player_game.attending = true
+      @player_game.save
+      # render json: { errors: ["You've already signed up for this game."] }, status: 422
+      # return
+    else
+      @player_game = PlayerGame.new(game_id: params[:game_id], player_id: current_player.id, attending: true)
     end
-    @player_game = PlayerGame.new(game_id: params[:game_id], player_id: current_player.id, attending: true)
     if @player_game.save
       render "create.json.jb"
     else
@@ -24,9 +29,8 @@ class Api::PlayerGamesController < ApplicationController
   end
 
   def destroy
-    player_game = current_player.games_attending.where(attending: true).find_by(id: params[:id])
-    player_game.attending = false
-    player_game.save
+    player_games = current_player.games_attending.where(game_id: params[:id])
+    player_games.update_all(attending: false)
     render json: { message: "You are no longer attending this game." }
   end
 end
