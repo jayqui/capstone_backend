@@ -19,10 +19,12 @@ Player.create!(name: "Adrianna Franch", email: "adrianna@example.com", password:
 Player.create!(name: "Julie Ertz", email: "julie@example.com", password: "password", address: "5 North California Ave, Chicago, IL 60645", position: "Defender", dob: Date.new(1992, 04, 06), level: "recreational")
 Player.create!(name: "Ernesto Melchor", email: "ernesto@example.com", password: "password", address: "88 North California Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1988, 8, 8), level: "recreational", admin: true)
 
-# 3 Fields
+# 5 Fields
 Field.create!(name: "Chicago Celtic Training Field", address: "5099 N Albany Ave, Chicago, IL 60625", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://lh5.googleusercontent.com/p/AF1QipMEJDDRfuBmd2_FvZwoz3yY24SbRPj3bNbRv_eM=w426-h240-k-no")
 Field.create!(name: "Clark Turf Field", address: "3373-3557 N Rockwell St, Chicago, IL 60618", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://geo2.ggpht.com/cbk?panoid=1AgKEngAyXT6UtivxuQZMw&output=thumbnail&cb_client=search.gws-prod/local-details-localweb.gps&thumb=2&w=408&h=240&yaw=48.7684&pitch=0&thumbfov=100")
 Field.create!(name: "Foster Turf Field", address: "Lakefront Trail, Chicago, IL 60640", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://s3-media0.fl.yelpcdn.com/bphoto/8OmwCU7D-mLb733W3WvwTQ/o.jpg")
+Field.create!(name: "Montrose Field", address: "W Montrose Ave, Chicago, IL 60640", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://lh3.googleusercontent.com/proxy/7ST-TyDnZBYpfYW-s69qxDCcWj33LGeJao9tpqqZ_2EfxFrPaxPWB0p_ScT328fvxrs-apF7eUVDa9p0fjN-paOXT39o4Y1eyA")
+Field.create!(name: "Lincoln Park Turf Field", address: "1778-1972 N John C, N Cannon Dr, Chicago, IL 60614", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://www.44thward.org/wp-content/uploads/2020/02/20190814-Diversey-Community-Meeting_Presentation_Reduced-20-1920x525-1-1920x525.jpg")
 
 # 2 Scheduled Games
 Game.create!(player_id: 1, field_id: 1, date_time: DateTime.new(2020, 8, 1, 11, 00, 00))
