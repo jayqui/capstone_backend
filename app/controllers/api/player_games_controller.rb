@@ -1,6 +1,6 @@
 class Api::PlayerGamesController < ApplicationController
   def index
-    @player_games = PlayerGame.all
+    @player_games = current_player.games_attending.where(attending: true)
     render "index.json.jb"
   end
 
