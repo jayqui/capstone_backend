@@ -27,7 +27,7 @@ Field.create!(name: "Davis Square Park Field", address: "4430 S Marshfield Ave, 
 Field.create!(name: "Lincoln Park Turf Field", address: "1778-1972 N John C, N Cannon Dr, Chicago, IL 60614", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://www.44thward.org/wp-content/uploads/2020/02/20190814-Diversey-Community-Meeting_Presentation_Reduced-20-1920x525-1-1920x525.jpg")
 
 # 2 Scheduled Games
-Game.create!(player_id: 1, field_id: 1, date_time: DateTime.new(2020, 8, 1, 11, 00, 00))
+Game.create!(player_id: 1, field_id: 1, date_time: DateTime.new(2020, 8, 26, 11, 00, 00))
 Game.create!(player_id: 8, field_id: 2, date_time: DateTime.new(2020, 7, 10, 19, 00, 00))
 
 # Players Attending Games (with 2 players attending and then bailing) <- Maybe a better model name could be GameActivity
