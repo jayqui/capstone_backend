@@ -1,6 +1,6 @@
 class Api::GamesController < ApplicationController
   def index
-    @games = Game.all
+    @games = Game.all.order(:date_time)
     render "index.json.jb"
   end
 
