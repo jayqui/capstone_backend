@@ -1,6 +1,6 @@
 class Api::FieldsController < ApplicationController
   def index
-    @fields = Field.all
+    @fields = Field.all.order(:name)
     render "index.json.jb"
   end
 
