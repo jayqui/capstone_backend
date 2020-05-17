@@ -4,6 +4,23 @@ class Api::FieldsController < ApplicationController
     render "index.json.jb"
   end
 
+  def create
+    response = Cloudinary::Uploader.upload(params[:image])
+    cloudinary_url = response["secure_url"]
+    @field = Field.new(
+      name: params[:name],
+      address: params[:address],
+      open_time: params[:open_time],
+      close_time: params[:close_time],
+      image_url: cloudinary_url,
+    )
+    if @post.save
+      render "show.json.jbuilder"
+    else
+      render json: { errors: @field.errors.full_messages }, status: 422
+    end
+  end
+
   def show
     @field = Field.find_by(id: params[:id])
     render "show.json.jb"
