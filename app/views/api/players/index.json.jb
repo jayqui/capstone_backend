@@ -1,6 +1,7 @@
 @players.map do |player|
   {
     id: player.id,
+    admin: player.admin,
     name: player.name,
     email: player.email,
     address: player.address,
