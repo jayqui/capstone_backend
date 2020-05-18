@@ -10,7 +10,7 @@ class Api::PlayersController < ApplicationController
   end
 
   def create
-    @player = Player.new(name: params[:name], email: params[:email], password: params[:password], address: params[:address], position: params[:position], dob: params[:dob], level: params[:level])
+    @player = Player.new(name: params[:name], email: params[:email], password: params[:password], address: params[:address], position: params[:position], dob: params[:dob], level: "recreational")
     if @player.save
       render "create.json.jb"
     else
