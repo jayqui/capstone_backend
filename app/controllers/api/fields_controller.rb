@@ -1,4 +1,6 @@
 class Api::FieldsController < ApplicationController
+  before_action :authenticate_admin, except: [:index, :show]
+
   def index
     @fields = Field.all.order(:name)
     render "index.json.jb"
