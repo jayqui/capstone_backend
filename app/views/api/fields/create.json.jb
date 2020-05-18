@@ -1,0 +1,8 @@
+{
+  field_id: @field.id,
+  field_name: @field.name,
+  field_address: @field.address,
+  open_time: @field.open_time,
+  close_time: @field.close_time,
+  field_image: @field.image_url,
+}
