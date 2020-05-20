@@ -29,6 +29,7 @@ Field.create!(name: "Allstate Field", address: "1440 N Humboldt Dr, Chicago, IL 
 Field.create!(name: "Parker Field", address: "30 W Webster Ave, Chicago, IL 60614", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://www.kieferusa.com/wp-content/uploads/2015/08/francis-parker-school-artificial-soccer-turf-kieferusa.jpg")
 Field.create!(name: "Horner Park Mini-Pitch", address: "2741 W Montrose Ave, Chicago, IL 60618", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://assets.chicagoparkdistrict.com/s3fs-public/inline-images/Horner%20Mini%20Pitch%20-%20for%20web-1.jpg")
 Field.create!(name: "Hoyne Athletic Field", address: "6336 N Hoyne Ave, Chicago, IL 60626", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://loyolaramblers.com/images/2011/6/6/loyc_11_soccer_field.jpg")
+Field.create!(name: "James Park Soccer Field 5", address: "330 Dodge Ave, Evanston, IL 60202", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://loyolaramblers.com/images/2011/6/6/loyc_11_soccer_field.jpg")
 
 # 2 Scheduled Games
 Game.create!(player_id: 1, field_id: 1, date_time: DateTime.new(2020, 8, 26, 11, 00, 00))
