@@ -26,7 +26,7 @@ Player.create!(name: "Jim Gonzalez", email: "jim@example.com", password: "passwo
 Player.create!(name: "Alexia Monroe", email: "alexia@example.com", password: "password", address: "14 Sacramento Ave, Chicago, IL 60645", position: "Midfield", dob: Date.new(1990, 07, 05), level: "recreational")
 Player.create!(name: "Miriam Altamirano", email: "miriam@example.com", password: "password", address: "25 Devon Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1990, 02, 19), level: "recreational")
 Player.create!(name: "Hope Sanders", email: "hope@example.com", password: "password", address: "53 Sacramento Ave, Chicago, IL 60645", position: "Forward", dob: Date.new(1990, 07, 03), level: "recreational")
-Player.create!(name: "James Madison", email: "james@example.com", password: "password", address: "46 Devon Ave, Chicago, IL 60645", position: "Goalkeeper", dob: Date.new(1990, 11, 12), level: "recreational")
+Player.create!(name: "Mark Madison", email: "mark@example.com", password: "password", address: "46 Devon Ave, Chicago, IL 60645", position: "Goalkeeper", dob: Date.new(1990, 11, 12), level: "recreational")
 
 # 20 Fields
 Field.create!(name: "Chicago Celtic Training Field", address: "5099 N Albany Ave, Chicago, IL 60625", open_time: DateTime.new(2020, 1, 1, 8, 00, 00), close_time: DateTime.new(2050, 1, 1, 8, 00, 00), image_url: "https://images.unsplash.com/photo-1570277756464-146a053f8a0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80")
