@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: fields
+#
+#  id         :bigint           not null, primary key
+#  name       :string
+#  address    :string
+#  open_time  :datetime
+#  close_time :datetime
+#  image_url  :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class Field < ApplicationRecord
   validates :name, presence: true
   validates :address, presence: true

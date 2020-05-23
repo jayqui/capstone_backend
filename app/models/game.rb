@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: games
+#
+#  id         :bigint           not null, primary key
+#  player_id  :integer
+#  field_id   :integer
+#  date_time  :datetime
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class Game < ApplicationRecord
   #validations
   validates :field, presence: true
