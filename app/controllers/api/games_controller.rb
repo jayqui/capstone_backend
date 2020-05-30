@@ -2,7 +2,7 @@ class Api::GamesController < ApplicationController
   before_action :authenticate_player
 
   def index
-    @games = Game.all.order(:date_time)
+    @games = Game.includes(:players, :field).order(:date_time)
     render "index.json.jb"
   end
 

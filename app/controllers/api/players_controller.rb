@@ -1,6 +1,6 @@
 class Api::PlayersController < ApplicationController
   def index
-    @players = Player.all
+    @players = Player.all.includes(:games_attending, :games_created)
     render "index.json.jb"
   end
 
