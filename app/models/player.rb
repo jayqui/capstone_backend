@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: players
+#
+#  id              :bigint           not null, primary key
+#  name            :string
+#  email           :string
+#  password_digest :string
+#  address         :string
+#  position        :string
+#  dob             :date
+#  level           :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
 class Player < ApplicationRecord
   #validations
   has_secure_password
