@@ -1,7 +1,9 @@
 class ApplicationController < ActionController::Base
-  #make current player method using current user (cheatsheet)
   protect_from_forgery with: :null_session
 
+  helper_method :current_player
+
+  # make current player method using current user (cheatsheet)
   def current_player
     auth_headers = request.headers["Authorization"]
     if auth_headers.present? && auth_headers[/(?<=\A(Bearer ))\S+\z/]
@@ -19,8 +21,6 @@ class ApplicationController < ActionController::Base
       end
     end
   end
-
-  helper_method :current_player
 
   def authenticate_player
     unless current_player
