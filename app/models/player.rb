@@ -14,7 +14,7 @@ class Player < ApplicationRecord
   has_many :games_attending, class_name: "PlayerGame"
   has_many :fields, through: :games_attending
 
-  def age!
+  def age
     ((Time.current - dob.to_time) / 1.year.seconds).floor
   end
 end

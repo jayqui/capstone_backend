@@ -2,12 +2,12 @@
   {
     id: player_game.id,
     game_id: player_game.game_id,
-    game_date_time: player_game.game.friendly_date_time!,
+    game_date_time: player_game.game.pretty_date_time,
     game_field: player_game.game.field,
     field_image: player_game.game.field.image_url,
     player_id: player_game.player.id,
     player_name: player_game.player.name,
-    attending: player_game.attending,
+    attending: player_game.attending?,
     updated_at: player_game.updated_at,
   }
 end

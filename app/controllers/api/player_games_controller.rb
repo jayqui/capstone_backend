@@ -11,10 +11,10 @@ class Api::PlayerGamesController < ApplicationController
 
   def create
     @player_game = PlayerGame.find_by(game_id: params[:game_id], player_id: current_player.id)
-    if @player_game && @player_game.attending
+    if @player_game && @player_game.attending?
       # do nothing
-    elsif @player_game && !@player_game.attending
-      @player_game.attending = true
+    elsif @player_game && !@player_game.attending?
+      @player_game.attending? = true
       @player_game.save
       # render json: { errors: ["You've already signed up for this game."] }, status: 422
       # return

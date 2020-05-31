@@ -5,7 +5,7 @@
     field: game.field,
     field_name: game.field.name,
     field_address: game.field.address,
-    scheduled: game.friendly_date_time!,
+    scheduled: game.pretty_date_time,
     players_attending: game.players_attending.length,
     attending: game.players_attending.include?(current_player),
     player_games: game.player_games.map do |player_game|
